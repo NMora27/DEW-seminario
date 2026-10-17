@@ -1,0 +1,8 @@
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N43_00_E015_00_DEM.tif
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N43_00_E016_00_DEM.tif
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N44_00_E014_00_DEM.tif
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N44_00_E015_00_DEM.tif
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N44_00_E016_00_DEM.tif
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N45_00_E014_00_DEM.tif
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N45_00_E015_00_DEM.tif
+/home/lempo/Documentos/Seminario de titulo/seminario 2/el git hub/DEW-seminario/data/altitude/Copernicus_DSM_COG_10_N45_00_E016_00_DEM.tif
