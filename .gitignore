@@ -1,0 +1,18 @@
+# Documentacion y verificaciones locales
+/codes/readme_vector.md
+/codes/test_vectorizacion.m
+/codes/verificar_meteo.m
+
+# Resumen y registro local de la extraccion
+/out/vectorizacion_2025_2040.csv
+/out/vectorizacion_2025_2040.log
+
+# Resultados meteorologicos: conservar en Git solo 2030 a 2040
+/data/**/meteo_*.mat
+!/data/**/meteo_203[0-9].mat
+!/data/**/meteo_2040.mat
+
+# Resultados de rocio: conservar en Git solo 2030 a 2040
+/out/**/dew_grid_*.mat
+!/out/**/dew_grid_203[0-9].mat
+!/out/**/dew_grid_2040.mat
