@@ -18,7 +18,7 @@ for k = 1:numel(campos)
     assert(isfield(c,campos{k}), 'Opcion desconocida: %s',campos{k});
     c.(campos{k}) = config.(campos{k});
 end
-% Por defecto: data/<modelo>/<anio>, incluso si los NetCDF son externos.
+% Por defecto: data/<modelo>, incluso si los NetCDF son externos.
 if isempty(c.directorio_salida)
     modelo = c.modelo;
     if isempty(modelo)
@@ -31,7 +31,7 @@ if isempty(c.directorio_salida)
     assert(~isempty(modelo) && ~any(strcmp(modelo,{'.','..'})) && ...
         isempty(regexp(modelo,'[\\/]','once')), ...
         'Indique modelo como nombre de carpeta, por ejemplo modelo8.5.');
-    c.directorio_salida = fullfile(c.directorio_datos,modelo,sprintf('%d',c.anio));
+    c.directorio_salida = fullfile(c.directorio_datos,modelo);
 end
 assert(numel(c.region)==4 && c.region(1)<=c.region(2) && ...
     c.region(3)<=c.region(4), 'Region: [lat_min lat_max lon_min lon_max].');

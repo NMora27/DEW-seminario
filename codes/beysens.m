@@ -1,15 +1,17 @@
 % BEYSENS: produccion de rocio a partir de los MAT de vectorizacion.m.
-% Configuracion: entrada data/modelo<modelo>/<anio>/meteo_<anio>.mat;
+% Configuracion: entrada data/modelo<modelo>/meteo_<anio>.mat;
 % salida out/vectors/model<modelo>/dew_grid_<anio>.mat (sin subcarpetas).
-modelo = '8.5';
-anios = 2026:2040;                % Intervalo de anios a procesar
+if ~exist('beysens_modelo', 'var'), beysens_modelo = '8.5'; end
+if ~exist('beysens_anios', 'var'), beysens_anios = 2020:2075; end
+modelo = beysens_modelo;
+anios = beysens_anios;
 
 raiz = fileparts(fileparts(mfilename('fullpath')));
 destino = fullfile(raiz,'out','vectors',['model' modelo]);
 a = 17.27; b = 237.7; V0 = 4.4;
 
 for anio = anios(:)'
-    entrada = fullfile(raiz,'data',['modelo' modelo],num2str(anio), ...
+    entrada = fullfile(raiz,'data',['modelo' modelo], ...
         sprintf('meteo_%d.mat',anio));
     M = load(entrada);
     campos = {'TaZ','HZ','WZ','CloudZ','prZ','puntos','altitud_m', ...
